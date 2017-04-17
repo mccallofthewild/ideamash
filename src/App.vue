@@ -1,5 +1,7 @@
 <template lang="pug">
   #app
+    a.brand(:href="home")
+      h1 Idea Mash
     .app-container
       Idea
     footer
@@ -47,7 +49,8 @@ export default {
       mccallLink:addRef("https://mccallalexander.com"),
       stefanLink:addRef("http://steppot.com"),
       audreyLink:addRef("https://thenounproject.com/andvasiliev"),
-      nounProjLink:addRef("https://thenounproject.com")
+      nounProjLink:addRef("https://thenounproject.com"),
+      home:`${window.location.href}`
     }
   },
   components:{ Idea }
@@ -77,6 +80,16 @@ body{
   margin:0;
   background-color:$black;
   font-family:'Open Sans';
+}
+.brand{
+  position: absolute;
+  top:0;
+  left:1rem;
+  text-decoration: none;
+  color:$black;
+  h1{
+    font-weight: normal;
+  }
 }
 footer{
   display: flex;

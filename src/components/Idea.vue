@@ -42,7 +42,6 @@
       }
     },
     methods:{
-
       mixup(){
         this.btnstyle = {
           transform:`scale(1.1)`
@@ -52,9 +51,11 @@
             transform:`scale(1)`
           }
         }, 150)
+
         this.job = randomItem(jobs)
-        this.action = randomItem(actions)
         this.tech = randomItem(tech)
+        this.action = randomItem(actions)
+      
       },
     },
     computed:{

@@ -1,6 +1,6 @@
-# idea_helper
+# Idea Mash
 
-> A Vue.js project
+> A Vue.js project to help you come up with ideas
 
 ## Build Setup
 
