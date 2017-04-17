@@ -13,7 +13,7 @@
             .social
               a(href="https://www.instagram.com/mccallalexander/", target="_blank")
                 img(:src="imgs.insta")
-              a(href="https://github.com/mccallofthewild/", target="_blank")
+              a(href="https://github.com/mccallofthewild/ideamash/", target="_blank")
                 img(:src="imgs.gh")
               a(href="https://twitter.com/mccallthetall", target="_blank")
                 img(:src="imgs.twitter")
@@ -24,6 +24,8 @@
             a(:href="stefanLink", target="_blank")  Stefan Wetterstrand;
           span twitter logo:
             a(:href="audreyLink", target="_blank") Andrey Vasiliev;
+          span favicon:
+            a(:href="michalLink", target="_blank") Michal Beňo
           span
             a(:href="nounProjLink", target="_blank") The Noun Project
 </template>
@@ -48,6 +50,7 @@ export default {
       },
       mccallLink:addRef("https://mccallalexander.com"),
       stefanLink:addRef("http://steppot.com"),
+      michalLink:addRef("https://dribbble.com/mikkimikki"),
       audreyLink:addRef("https://thenounproject.com/andvasiliev"),
       nounProjLink:addRef("https://thenounproject.com"),
       home:`${window.location.href}`
