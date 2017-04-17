@@ -1,0 +1,98 @@
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+
+    /*==========  Non-Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @mixin retina {
+      @media only screen and (max-width : 320px) {
+        @content;
+      }
+    }
+
+    @mixin iphone4 {
+      @media only screen 
+        and (min-device-width: 320px) 
+        and (max-device-width: 480px)
+        and (-webkit-min-device-pixel-ratio: 2) {
+          @content;
+      }
+    }
+
+    @mixin iphone5 {
+      @media only screen 
+        and (min-device-width: 320px) 
+        and (max-device-width: 568px)
+        and (-webkit-min-device-pixel-ratio: 2) {
+          @content;
+      }
+    }
+
+    @mixin iphone6 {
+      @media only screen 
+        and (min-device-width: 375px) 
+        and (max-device-width: 667px) 
+        and (-webkit-min-device-pixel-ratio: 2) { 
+          @content;
+      }
+    }
+
+    @mixin iphone6plus {
+      @media only screen 
+        and (min-device-width: 414px) 
+        and (max-device-width: 736px) 
+        and (-webkit-min-device-pixel-ratio: 3) { 
+          @content;
+      }
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @mixin xs {
+      @media only screen and (max-width : 480px) {
+        @content;
+      }
+    }
+
+
+    /* Small Devices, Tablets */
+    @mixin sm {
+      @media only screen and (max-width : 768px) {
+        @content;
+      }
+    }
+
+
+    /* Medium Devices, Desktops */
+    @mixin md {
+      @media only screen and (max-width : 992px) {
+        @content;
+      }
+    }
+
+
+    /* Large Devices, Wide Screens */
+    @mixin iphone {
+      @media only screen and (max-width : 1200px) {
+        @content;
+      }
+    }
+    
+    @mixin mobile{
+      @include iphone4{
+        @content;
+      }
+      @include iphone5{
+        @content;
+      }
+      @include iphone6{
+        @content;
+      }
+      @include iphone6plus{
+        @content;
+      }
+      @include xs{
+        @content;
+      }
+    }
